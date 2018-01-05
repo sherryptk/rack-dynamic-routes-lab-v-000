@@ -11,7 +11,7 @@ class Application
       if item = @@items.find{|i| i.name == item_requested}
       resp.write item.price
       else
-        resp.write "Route not found"
+        resp.write "Item not found"
         resp.status = 400
     else
       resp.write "Route not found"
